@@ -1,1 +1,1 @@
-Variables validation error: ('module: cloudsql', ValidationError({'ha_zones': ['Not a valid list.']}))
+Variables validation error: ('module: cloudsql', ValidationError({'ha_replica_zones': ['Not a valid list.']}))
