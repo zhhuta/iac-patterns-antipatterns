@@ -37,7 +37,20 @@ module "Hello World" {
         disk_size           = local.disk_size
         availability_type   = "ZONAL"
         ip_configuration    = { ipv4_enabled = false }
-        location_preference = { zone = "us-east4-b" }
+        location_preference = { zone = "us-east4-a" }
+        database_flags      = local.database_flags
+      }
+    },
+
+    { name                         = "Hello World-read-relica-1"
+      region                       = var.region
+      deletion_protection_replicas =ssss
+      settings = {
+        tier                = "db-n1-standard-4"
+        disk_size           = local.disk_size
+        availability_type   = "ZONAL"
+        ip_configuration    = { ipv4_enabled = false }
+        location_preference = { zone = "us-east4-c" }
         database_flags      = local.database_flags
       }
     },
