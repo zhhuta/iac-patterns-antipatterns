@@ -1,1 +1,1 @@
-Variables validation error: ('module: cloudsql', ValidationError({'del_protection': ['Missing data for required field.']}))
+Variables validation error: ('module: cloudsql', ValidationError({'disk_size': ['Missing data for required field.'], 'version': ['Missing data for required field.'], 'ha': ['Missing data for required field.'], 'name': ['Missing data for required field.'], 'del_protection': ['Missing data for required field.'], 'ha_replica_zones': ['Missing data for required field.'], 'tier': ['Missing data for required field.']}))
