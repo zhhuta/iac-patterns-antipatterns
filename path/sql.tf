@@ -7,12 +7,12 @@ locals {
   disk_size = 50
 }
 
-module "zhhuta" {
+module "Hello World" {
 
 
   source = "git::https://github.com/pcln/terraform-gcp-cloudsql.git//modules/mysql"
 
-  name                = "zhhuta-master"
+  name                = "Hello World-master"
   database_version    = "MYSQL_8_0"
   team                = "data_eng"
   deletion_protection = true
@@ -24,13 +24,13 @@ module "zhhuta" {
     availability_type    = "ZONAL"
     ip_configuration     = { ipv4_enabled = false }
     backup_configuration = { enabled = true, binary_log_enabled = true, start_time = "20:55" }
-    location_preference  = { zone = "us-east4-d" }
+    location_preference  = { zone = "us-east4-a" }
     database_flags       = local.database_flags
   }
 
   read_replicas = [
 
-    { name                         = "zhhuta-read-relica-0"
+    { name                         = "Hello World-read-relica-0"
       region                       = var.region
       deletion_protection_replicas = true
       settings = {
@@ -43,7 +43,7 @@ module "zhhuta" {
       }
     },
 
-    { name                         = "zhhuta-read-relica-1"
+    { name                         = "Hello World-read-relica-1"
       region                       = var.region
       deletion_protection_replicas = true
       settings = {
@@ -56,7 +56,7 @@ module "zhhuta" {
       }
     },
 
-    { name                         = "zhhuta-read-relica-2"
+    { name                         = "Hello World-read-relica-2"
       region                       = var.region
       deletion_protection_replicas = true
       settings = {
