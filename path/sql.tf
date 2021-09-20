@@ -1,1 +1,1 @@
-Variables validation error: ('module: cloudsql', ValidationError({'teams': ['Missing data for required field.'], 'labels': ['Missing data for required field.']}))
+Variables validation error: ('module: cloudsql', ValidationError({'labels': ['Missing data for required field.'], 'teams': ['Missing data for required field.']}))
