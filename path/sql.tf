@@ -38,7 +38,7 @@ module "Hello World" {
         disk_size           = local.disk_size
         availability_type   = "ZONAL"
         ip_configuration    = { ipv4_enabled = false }
-        location_preference = { zone = "us-east4-c" }
+        location_preference = { zone = "us-east4-b" }
         database_flags      = local.database_flags
       }
     },
