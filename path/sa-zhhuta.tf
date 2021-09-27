@@ -5,5 +5,5 @@ module "zhhuta-sa" {
   project      = var.project
   account_id   = "zhhuta-sa"
   display_name = "zhhuta-sa"
-  description  = "New service account"
+  description  = "New service account for zhhuta"
 }
